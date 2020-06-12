@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 
 export default class Cell extends Component {
     constructor(props){
-        super(props)
-        this.state = {"color": this.props.value}
+        super()
+        this.state = {
+            "color": props.value
+        }
     }
 
     onClicks = () => {
-        this.setState({'color': '#333'})
+        this.setState({color: '#333'})
     }
 
     render(){
